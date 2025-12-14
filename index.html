@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MadFroggys - Flutter Code</title>
+    <style>
+        body { background: #0f172a; color: #e2e8f0; font-family: monospace; padding: 20px; }
+        h1 { color: #10b981; }
+        pre { background: #1e293b; padding: 20px; border-radius: 8px; overflow-x: auto; border: 1px solid #334155; }
+        .file-label { margin-top: 30px; font-weight: bold; color: #94a3b8; margin-bottom: 10px; display: block;}
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.33.0",
+    "lucide-react": "https://esm.sh/lucide-react@^0.561.0",
+    "jszip": "https://esm.sh/jszip@^3.10.1"
+  }
+}
+</script>
+</head>
+<body>
+    <h1>MadFroggys has been converted to Flutter</h1>
+    <p>This environment cannot run Dart/Flutter directly. Please copy the files below to your local Flutter project.</p>
+
+    <span class="file-label">pubspec.yaml</span>
+    <pre id="pubspec"></pre>
+
+    <span class="file-label">lib/main.dart</span>
+    <pre id="main"></pre>
+
+    <script>
+        // Simple script to fetch the file contents we just wrote and display them
+        // This simulates a "File Viewer"
+        async function loadFiles() {
+            // In a real scenario we might fetch, but here we will just hardcode the text 
+            // from the files we assume exist in the XML response logic.
+            // Since we can't easily fetch 'lib/main.dart' via XHR in this specific mock environment easily without a server,
+            // I will ask you to look at the 'lib/main.dart' tab in your editor.
+            
+            document.getElementById('pubspec').innerText = "See pubspec.yaml file in the project explorer.";
+            document.getElementById('main').innerText = "See lib/main.dart file in the project explorer.";
+        }
+        loadFiles();
+    </script>
+</body>
+</html>

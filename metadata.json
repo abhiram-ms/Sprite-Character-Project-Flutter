@@ -1,0 +1,5 @@
+{
+  "name": "MadFroggys Sprite Creator - Flutter",
+  "description": "Generate custom 8x8 character spritesheets for 2D games using Gemini AI.",
+  "requestFramePermissions": []
+}
